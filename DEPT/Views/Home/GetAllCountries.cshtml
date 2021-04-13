@@ -1,0 +1,11 @@
+﻿@model CountryViewModel
+<div class="col-sm-4 col-lg-4 col-md-4">
+    @foreach (var country in Model.Countries)
+    { 
+            <div class="caption">
+                <h3 class="pull-right">@country.Code</h3>
+                <p>@country.Name</p>
+            </div>
+        
+    }
+</div>

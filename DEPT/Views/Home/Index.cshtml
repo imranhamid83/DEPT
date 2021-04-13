@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <h4>Connection Status: @ViewBag.Connection</h4>
+</div>
+<div>
+    <h4>Get All countries</h4>
+    <a asp-controller="Home" asp-action="GetAllCountries">Get all Countries</a>
+
+    <h4>Get Country by code</h4>
+    <a asp-controller="Home" asp-action="GetCountryByCode" asp-route-code="GB">Get Country by Code</a>
+</div>
